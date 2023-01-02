@@ -1,8 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import Protector from './Protector';
 import Home from '../../pages/HomePage';
-import SignUpPage from '../../pages/auth/SignUpPage';
-import SignInPage from '../../pages/auth/SignInPage';
+import SignInPage from '../../pages/SignInPage';
 import NotFoundPage from '../../pages/NotFoundPage';
 import Layout from './Layout';
 
@@ -22,12 +21,6 @@ const routes: RouteType[] = [
     path: '/auth/sign-in',
     element: SignInPage,
     requiredIsAuthState: false,
-  },
-  {
-    path: '/auth/sign-up',
-    element: SignUpPage,
-    requiredIsAuthState: false,
-    redirectTo: '/',
   },
   {
     path: '*',
