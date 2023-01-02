@@ -88,8 +88,8 @@ export interface IOverridedThemeOptions extends ThemeOptions {
       secondary: string;
     };
     background: {
-      default: '#FAFAFA',
-      paper: '#FFF',
+      default: string,
+      paper: string,
     },
   };
 }
